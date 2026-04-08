@@ -42,3 +42,19 @@ animeScroll();
 window.addEventListener("scroll", () => {
   animeScroll();
 });
+
+// Ativar carregamento no botão de enviar formulário
+
+const btnSend = document.querySelector('#btn-send')
+const btnSendLoader = document.querySelector('#btn-send-loader')
+
+btnSend.addEventListener('click', ()=>{
+  btnSendLoader.style.display = "block";
+  btnSend.style.display = "none"
+})
+
+// Remove alert before 5 seconds
+
+setTimeout(() => {
+  document.querySelector('#alerta').style.display = 'none';
+}, 5000)

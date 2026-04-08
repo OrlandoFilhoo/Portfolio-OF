@@ -49,7 +49,7 @@ def send():
             '''
         )
         mail.send(msg)
-        flash('Message sent successfully!')
+        flash('Message send successfully!')
     return redirect('/')
 
 if __name__ == '__main__':
